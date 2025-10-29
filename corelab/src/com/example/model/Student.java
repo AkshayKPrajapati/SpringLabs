@@ -5,4 +5,12 @@ public class Student {
 	public Student(){
 		System.out.println("Student Constructor get Called !!!");
 	}
+
+	@Override
+	public String toString() {
+		return "Student [getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
+				+ "]";
+	}
+	
+	
 }

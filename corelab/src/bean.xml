@@ -5,6 +5,10 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- Bean Declaration -->
-	<bean id="student" class="com.example.model.Student"></bean>
+	<bean id="student" class="com.example.model.Student">
+	
+	
+	
+	</bean>
 	
 </beans>
