@@ -1,0 +1,14 @@
+package com.example.core;
+
+public class Main {
+	
+	public Main(){
+		System.out.println("Main Constructor get Called !!!!");
+		
+	}
+	
+	public static void main(String[] args) {
+		System.out.println("Spring Core !!!");
+		Main main= new Main();
+	}
+}

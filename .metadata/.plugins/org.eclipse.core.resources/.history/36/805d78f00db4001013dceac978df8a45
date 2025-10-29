@@ -1,0 +1,11 @@
+package com.example.spring;
+
+import javax.annotation.Resource;
+
+public class Test {
+	public static void main(String[] args) {
+		Resource resource = new Resource("spring.xml");
+		
+	}
+
+}
