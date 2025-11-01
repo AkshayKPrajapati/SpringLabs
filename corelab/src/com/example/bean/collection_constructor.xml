@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="student" class="com.example.model.StudentData">
+		<constructor-arg name="marks">
+			<list>
+				<value>80</value>
+				<value>90</value>
+				<value>85</value>
+			</list>	
+		</constructor-arg>
+		<constructor-arg name="subject">
+			<set>
+				<value>Math</value>
+				<value>Science</value>
+				<value>English</value>
+			</set>
+		</constructor-arg>
+		<constructor-arg name="department">
+			<map>
+				<entry key="101" value="IT"></entry>
+				<entry key="102" value="Computer"></entry>
+				<entry key="103" value="Lab"></entry>
+				<entry key="103" value="Admission"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+</beans>

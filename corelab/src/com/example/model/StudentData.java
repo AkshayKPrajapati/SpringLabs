@@ -34,6 +34,12 @@ public class StudentData {
 	public void setDepartment(Map<Integer, String> department) {
 		this.department = department;
 	}
+	//Constructor
+	public StudentData(List<Integer> marks, Set<String> subject, Map<Integer, String> department) {
+		this.marks = marks;
+		this.subject = subject;
+		this.department = department;
+	}
 	
 
 }

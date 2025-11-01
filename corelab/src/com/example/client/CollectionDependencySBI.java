@@ -15,7 +15,6 @@ import com.example.model.StudentData;
  */
 public class CollectionDependencySBI {
 	
-	
 	public static String file="com/example/bean/collection.xml";
 	public static void main(String[] args) {
 		ApplicationContext context=new ClassPathXmlApplicationContext(file);
