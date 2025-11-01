@@ -1,0 +1,12 @@
+package com.example.client;
+/*
+ * Collection Dependency Using Setter Based Injection 
+ */
+public class CollectionDependencySBI {
+	
+	
+	public static String file="com/example/bean/collection.xml";
+	public static void main(String[] args) {
+		
+	}
+}

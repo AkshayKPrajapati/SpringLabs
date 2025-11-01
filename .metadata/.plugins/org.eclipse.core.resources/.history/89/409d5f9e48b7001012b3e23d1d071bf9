@@ -1,0 +1,7 @@
+package com.example.client;
+/*
+ * Collection Dependency Using Setter Based Injection 
+ */
+public class CollectionDependencySBI {
+
+}
