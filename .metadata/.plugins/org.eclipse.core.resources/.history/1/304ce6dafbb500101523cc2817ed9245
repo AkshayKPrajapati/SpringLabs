@@ -1,0 +1,48 @@
+package com.example.client;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.example.model.Empolyee;
+import com.example.model.Student;
+
+@SuppressWarnings({ "unused", "deprecation" })
+public class Main {
+//	Instance Data Member
+	public static String file="bean.xml";
+
+    @SuppressWarnings("resource")
+	public static void main(String[] args) {
+    	
+    	/*Resource resource = new ClassPathResource("bean.xml");
+        BeanFactory factory = new XmlBeanFactory(resource);
+        Student student = (Student) factory.getBean("student");
+        System.out.println(student);
+        */
+    	
+    	
+    	
+    	 	//Using Bean Factory
+    	/*Resource resource=new ClassPathResource(file);
+    	BeanFactory factory=new XmlBeanFactory(resource);
+    	Student student=  factory.getBean(Student.class);
+    	System.out.println(student);
+    	*/
+    	
+    	
+    	//Using Application Context
+    	ApplicationContext context=new ClassPathXmlApplicationContext(file);
+    	Student student = context.getBean(Student.class);
+    	Empolyee empolyee=context.getBean(Empolyee.class);
+    	System.out.println(student +" "+empolyee);
+    	
+    }
+}
+
+
+@SuppressWarnings("serial")
+class CustomeException extends Exception{
+	public CustomeException(String msg){
+		super(msg);
+	}
+}

@@ -1,0 +1,10 @@
+package com.example.client;
+/*
+ * Secondary Dependency Injection Using Setter Based Injection
+ */
+public class SecondaryDependencyUsingSBI {
+	
+	public static void main(String[] args) {
+		
+	}
+}

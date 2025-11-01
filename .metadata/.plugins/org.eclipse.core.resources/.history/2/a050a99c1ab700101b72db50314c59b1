@@ -1,0 +1,8 @@
+package com.example.model;
+
+public class EmpolyeeData {
+	
+	int empId;
+	String empName;
+	CompanyData companyData;
+}

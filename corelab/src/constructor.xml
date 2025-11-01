@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Employee Data Bean  -->
+    <bean id = "emp" class="com.example.model.EmpolyeeData">
+    	<constructor-arg name="empId" value="101"></constructor-arg>
+    	<constructor-arg name="empName" value="Neha"></constructor-arg>
+    	<constructor-arg name="companyData" ref="company"></constructor-arg>
+    </bean>
+    
+    <!-- Company Data Bean -->
+    <bean id ="company" class="com.example.model.CompanyData">
+    	<constructor-arg name="companyId" value="5001"></constructor-arg>
+    	<constructor-arg name="compnayName" value="TCS"></constructor-arg>
+    </bean>
+	
+</beans>

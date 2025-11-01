@@ -1,5 +1,7 @@
 package com.example.core;
 
+import com.example.model.Empolyee;
+
 public class Main {
 	
 	public Main(){
@@ -7,8 +9,11 @@ public class Main {
 		
 	}
 	
+	
 	public static void main(String[] args) {
 		System.out.println("Spring Core !!!");
-		Main main= new Main();
+		Empolyee empolyee=new Empolyee(101, "Sohan", "pune");
+		Empolyee emp=new Empolyee(1013, "SohanK", "puneK");
+		System.out.println(empolyee+" "+emp);
 	}
 }

@@ -1,0 +1,23 @@
+package com.example.client;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.example.model.Empolyee;
+
+/*
+ * Setter Based Injection by Primitive Dependency
+ */
+public class SetterBasedInjection {
+	
+	@SuppressWarnings("resource")
+	public static void main(String[] args) {
+	
+		ApplicationContext applicationContext=new ClassPathXmlApplicationContext("bean.xml");
+		Empolyee empolyee =(Empolyee) applicationContext.getBean("employee");
+		Empolyee emp =(Empolyee) applicationContext.getBean("emp");
+
+		System.out.println(empolyee.getEmpId()+" ,"+empolyee.getName()+" ,"+empolyee.getCity());
+	}
+
+}

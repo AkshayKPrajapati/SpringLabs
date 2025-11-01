@@ -1,0 +1,19 @@
+package com.example.core;
+
+import com.example.model.Empolyee;
+
+public class Main {
+	
+	public Main(){
+		System.out.println("Main Constructor get Called !!!!");
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		System.out.println("Spring Core !!!");
+		Empolyee empolyee=new Empolyee(101, "Sohan", "pune");
+		Empolyee emp=new Empolyee(101, "Sohan", "pune");
+		System.out.println(empolyee+" "+emp);
+	}
+}

@@ -1,0 +1,31 @@
+package com.example.model;
+
+public class EmpolyeeData {
+	
+	int empId;
+	String empName;
+	CompanyData companyData;
+	
+	//Getter and Setter
+	public int getEmpId() {
+		return empId;
+	}
+	public void setEmpId(int empId) {
+		this.empId = empId;
+	}
+	public String getEmpName() {
+		return empName;
+	}
+	public void setEmpName(String empName) {
+		this.empName = empName;
+	}
+	public CompanyData getCompanyData() {
+		return companyData;
+	}
+	public void setCompanyData(CompanyData companyData) {
+		this.companyData = companyData;
+	}
+	
+	 
+	
+}

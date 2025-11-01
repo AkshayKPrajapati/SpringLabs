@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Empolyee Data Bean  -->
+    <bean id = "emp" class="com.example.model.EmpolyeeData">
+    	<property name="empId" value="101"></property>
+    	<property name="empName" value="Neha"></property>
+    	<property name="companyData" ref="company"></property>
+    </bean>
+    
+    <!-- Company Data Bean -->
+    <bean id ="company" class="com.example.model.CompanyData">
+    	<property name="companyId" value="5001"></property>
+    	<property name="compnayName" value="TCS"></property>
+    </bean>
+	
+</beans>

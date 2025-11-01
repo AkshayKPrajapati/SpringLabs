@@ -1,0 +1,39 @@
+package com.example.model;
+
+public class CompanyData {
+	int companyId;
+	String compnayName;
+	
+	
+//	public int getCompanyId() {
+//		return companyId;
+//	}
+//	public void setCompanyId(int companyId) {
+//		this.companyId = companyId;
+//	}
+//	public String getCompnayName() {
+//		return compnayName;
+//	}
+//	public void setCompnayName(String compnayName) {
+//		this.compnayName = compnayName;
+//	}
+	
+	
+	public CompanyData(int companyId, String compnayName) {
+		this.companyId = companyId;
+		this.compnayName = compnayName;
+	}
+	
+	
+	public CompanyData() {
+	}
+	
+	@Override
+	public String toString() {
+		return "CompanyData [companyId=" + companyId + ", compnayName=" + compnayName + "]";
+	}
+	
+	
+	
+	
+}
