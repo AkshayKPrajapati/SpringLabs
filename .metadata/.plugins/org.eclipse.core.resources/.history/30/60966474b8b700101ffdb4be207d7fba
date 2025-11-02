@@ -1,0 +1,10 @@
+package com.example.client;
+
+public class SpringBeanScope {
+	public static String scopeBeanFile="com/example/bean/scope.xml";
+	
+	public static void main(String[] args) {
+		
+		
+	}
+}

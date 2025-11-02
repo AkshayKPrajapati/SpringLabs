@@ -1,7 +1,5 @@
 package com.example.model;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 public class Empolyee {
 	
 	int empId;
@@ -33,6 +31,7 @@ public class Empolyee {
 		this.name = name;
 		this.city = city;
 	}
+	
 	@Override
 	public String toString() {
 		return "Empolyee [empId=" + empId + ", name=" + name + ", city=" + city + "]";

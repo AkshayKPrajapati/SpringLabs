@@ -5,8 +5,8 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- Bean Declaration -->
-	<bean id="student" class="com.example.model.Student">	
-	</bean>
+	<!-- <bean id="student" class="com.example.model.Student">	
+	</bean>  -->
 	
 	<!-- First Bean -->
     <bean id="employee" class="com.example.model.Empolyee">
@@ -20,6 +20,6 @@
         <property name="empId" value="102"/>
         <property name="name" value="Neha"/>
         <property name="city" value="Pune"/>
-    </bean>
+    </bean> 
 	
 </beans>

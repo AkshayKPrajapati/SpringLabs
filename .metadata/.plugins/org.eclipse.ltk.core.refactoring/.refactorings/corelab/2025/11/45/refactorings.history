@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;corelab/src/com/example/bean/ scope.xml&apos; to &apos;scope.xml&apos;" description="Rename resource &apos; scope.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/example/bean/ scope.xml" name="scope.xml" stamp="1762066833570" updateReferences="true"/>
+</session>
