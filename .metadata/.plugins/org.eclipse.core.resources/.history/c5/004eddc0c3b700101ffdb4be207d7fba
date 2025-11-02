@@ -1,0 +1,7 @@
+package com.example.model;
+
+public class StudentNew {
+	int id;
+	String name ;
+	Address address;
+}

@@ -9,16 +9,16 @@
 <fullyQualifiedTypeName name="com.example.client.CustomeException"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.EnableAspectJAutoProxy"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
-<fullyQualifiedTypeName name="com.example.model.Empolyee"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="com.example.core.Main"/>
 <fullyQualifiedTypeName name="com.example.model.EmpolyeeData"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
-<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
-<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
-<fullyQualifiedTypeName name="com.example.model.Student"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.example.model.StudentData"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="com.example.model.Empolyee"/>
+<fullyQualifiedTypeName name="com.example.model.Student"/>
 </qualifiedTypeNameHistroy>

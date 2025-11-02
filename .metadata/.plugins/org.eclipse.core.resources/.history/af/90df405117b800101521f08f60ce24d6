@@ -1,0 +1,10 @@
+package com.example.model;
+
+/*
+ * Model class of the Address Class
+ */
+public class Address {
+	
+	String city;
+	String State;
+}
