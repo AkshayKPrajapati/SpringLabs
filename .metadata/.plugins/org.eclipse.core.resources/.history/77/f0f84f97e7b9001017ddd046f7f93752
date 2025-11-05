@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Address Class Bean  -->
+	 <bean id ="add" class="com.example.model.Address">
+	 	<property name="city" value="Nagpur"></property>
+	 	<property name="state" value="Maharastra"></property>
+	 </bean>
+	 
+	 <bean id = "emp" class="com.example.model.EmpolyeeData" autowire="byType">
+    	<property name="empId" value="10001"></property>
+    	<property name="empName" value="Neha Shrama"></property>
+    </bean>
+	 
+	 <bean id ="company" class="com.example.model.CompanyData">
+    	<property name="companyId" value="5001"></property>
+    	<property name="compnayName" value="TCS"></property>
+    </bean>
+	 
+	 
+	 <bean id ="address" class="com.example.model.Address" autowire-candidate="false">
+	 	<property name="city" value="NGP"></property>
+	 	<property name="state" value="MH"></property>
+	 </bean>
+	 
+	 <!-- Student New Bean  -->
+	 <bean id="studentNew" class="com.example.model.StudentNew" autowire="byType">
+	 	<property name="id" value="50001"></property>
+	 	<property name="name" value="Shreya"></property>
+	 </bean>
+	
+</beans>
