@@ -1,0 +1,23 @@
+package com.example.client;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.example.model.StudentNew;
+
+/*
+ * Auto By Constructor Class 
+ */
+@SuppressWarnings("resource")
+public class AutoWiringByConstructor {
+	
+	
+	public static void main(String[] args) {
+		String AutoByNameBeanFile="com/example/bean/AutoByConstructor.xml";
+		
+		ApplicationContext applicationContext=new ClassPathXmlApplicationContext(AutoByNameBeanFile);
+		StudentNew studentNew =(StudentNew) applicationContext.getBean("studentNew");
+		System.out.println(studentNew);
+	
+	}
+}
