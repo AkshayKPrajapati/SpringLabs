@@ -1,0 +1,10 @@
+package com.example.client;
+
+/*
+ * Auto By Annotation
+ */
+public class AutoWiringByAnnotation {
+	public static void main(String[] args) {
+		
+	}
+}

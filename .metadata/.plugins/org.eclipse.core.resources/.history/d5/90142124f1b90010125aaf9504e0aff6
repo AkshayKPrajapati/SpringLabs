@@ -1,14 +1,10 @@
 package com.example.model;
-
-import org.springframework.beans.factory.annotation.Autowired;
-
 /*
  * Model class of the Student Class
  */
 public class StudentNew {
 	int id;
 	String name ;
-	@Autowired
 	Address address; //Secondary Dependency
 	public int getId() {
 		return id;
