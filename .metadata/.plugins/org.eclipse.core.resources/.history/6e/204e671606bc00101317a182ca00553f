@@ -1,0 +1,15 @@
+package com.example.core;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.example.config.JavaConfig;
+import com.example.model.Students;
+
+public class JavaConfiig {
+	public static void main(String[] args) {
+		ApplicationContext context=new AnnotationConfigApplicationContext(JavaConfig.class);
+		Students students=(Students) context.getBean("student");
+		System.out.println(students);
+	}
+}
