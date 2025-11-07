@@ -1,0 +1,22 @@
+package com.example.client;
+
+import org.springframework.context.ApplicationContext;
+
+/*
+ * Use of the @ Components
+ * And Value Annotation 
+ * 
+ * Model Class : Students.java\
+ * 
+ * XML class : UseOfComponent.xml
+ */
+
+
+public class UseOfComponentAndValueAnnotatin {
+	
+	public static void main(String[] args) {
+		
+        String configFile = "com/example/bean/UseOfComponent.xml";
+        ApplicationContext context=new Class
+	}
+}

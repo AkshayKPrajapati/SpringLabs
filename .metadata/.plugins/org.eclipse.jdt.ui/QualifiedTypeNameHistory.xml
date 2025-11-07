@@ -17,10 +17,13 @@
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="com.example.model.Empolyee"/>
 <fullyQualifiedTypeName name="com.example.model.Student"/>
-<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.ClassPathBeanDefinitionScanner"/>
+<fullyQualifiedTypeName name="com.example.model.EmpolyeeData"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
 <fullyQualifiedTypeName name="com.example.model.StudentNew"/>
-<fullyQualifiedTypeName name="com.example.model.EmpolyeeData"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+<fullyQualifiedTypeName name="com.example.model.StudentModelData"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
 </qualifiedTypeNameHistroy>

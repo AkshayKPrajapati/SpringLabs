@@ -1,0 +1,16 @@
+package com.example.client;
+
+
+/*
+ * Use of the @ Components
+ * And Value Annotation 
+ * 
+ * Model Class : Students.java\
+ * 
+ * XML class : components.xml
+ */
+
+
+public class UseOfComponentAndValueAnnotatin {
+
+}

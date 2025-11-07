@@ -1,0 +1,8 @@
+package com.example.model;
+
+import org.springframework.stereotype.Component;
+
+@Component("student")
+public class Students {
+
+}

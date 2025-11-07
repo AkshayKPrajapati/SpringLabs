@@ -1,0 +1,44 @@
+package com.example.model;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+public class StudentModelData {
+    private int id;
+    private String name;
+
+    @Autowired
+    @Qualifier("addPune") // tells Spring which Address bean to inject
+    private Address address;
+
+    public StudentModelData() {
+        System.out.println("StudentModelData object created...");
+    }
+
+    // getters and setters
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "StudentModelData [id=" + id + ", name=" + name + ", address=" + address + "]";
+    }
+}

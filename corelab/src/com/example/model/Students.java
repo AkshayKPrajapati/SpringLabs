@@ -1,0 +1,47 @@
+package com.example.model;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component("student")
+public class Students {
+	
+	@Value("1001")
+	int studentId;
+	
+	@Value("Neha")
+	String studentName;
+	
+	
+	public Students(){
+		System.out.println("Student object created ...............");
+	}
+
+
+	public int getStudentId() {
+		return studentId;
+	}
+
+
+	public void setStudentId(int studentId) {
+		this.studentId = studentId;
+	}
+
+
+	public String getStudentName() {
+		return studentName;
+	}
+
+
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Students [studentId=" + studentId + ", studentName=" + studentName + "]";
+	}
+	
+	
+}

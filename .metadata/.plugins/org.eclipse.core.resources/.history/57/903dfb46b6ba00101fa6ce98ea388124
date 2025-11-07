@@ -1,0 +1,17 @@
+package com.example.client;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.example.model.StudentModelData;
+import com.example.model.StudentNew;
+
+public class UseOfQualifierAnnotation {
+	public static void main(String[] args) {
+		String UseOfQualifierAnnotation="com/example/bean/UseOfQualifierAnnotation.xml";
+		ApplicationContext context=new ClassPathXmlApplicationContext(UseOfQualifierAnnotation);
+		StudentModelData studentNew=(StudentModelData) context.getBean("studentNew");
+		System.out.println(studentNew);
+	}
+	
+}

@@ -1,9 +1,0 @@
-package com.example.model;
-
-public class Empolyee {
-	
-	public Empolyee(){
-		System.out.println("Emp Class constructor ");
-	}
-
-}
