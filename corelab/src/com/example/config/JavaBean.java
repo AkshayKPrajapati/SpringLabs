@@ -8,9 +8,13 @@ import com.example.model.StudentBean;
 
 @Configuration
 @ComponentScan("com.example.model")
-public class JavaBean {
+public class JavaBean { 
 	@Bean("student")
 	public StudentBean getStudentBean(){
 		return new StudentBean();
 	}
+	
+	
+	
+	
 }

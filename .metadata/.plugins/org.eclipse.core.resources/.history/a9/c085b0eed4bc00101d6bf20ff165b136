@@ -1,0 +1,17 @@
+package com.doubt.bean;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScan("com.doubt.bean")
+public class JavaBean {
+	
+	@Bean("student")
+	public Student getStudent(){
+		
+	}
+	
+	
+	
+}

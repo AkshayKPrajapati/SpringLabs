@@ -1,0 +1,11 @@
+package com.doubt.bean;
+
+public class Student {
+	private int id;
+	private String name;
+	
+	
+	public Student(){
+		System.out.println("Student get class object created ...........");
+	}
+}
