@@ -24,16 +24,19 @@
 <fullyQualifiedTypeName name="com.example.model.StudentModelData"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
 <fullyQualifiedTypeName name="com.example.config.JavaConfig"/>
-<fullyQualifiedTypeName name="com.example.core.Student"/>
 <fullyQualifiedTypeName name="com.example.model.Students"/>
+<fullyQualifiedTypeName name="com.example.config.JavaBean"/>
+<fullyQualifiedTypeName name="com.example.model.StudentBean"/>
+<fullyQualifiedTypeName name="com.example.core.Student"/>
+<fullyQualifiedTypeName name="com.example.model.Address"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
-<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
-<fullyQualifiedTypeName name="com.example.config.JavaBean"/>
-<fullyQualifiedTypeName name="com.example.model.StudentBean"/>
+<fullyQualifiedTypeName name="com.doubt.bean.JavaBean"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+<fullyQualifiedTypeName name="com.doubt.bean.Student"/>
 </qualifiedTypeNameHistroy>
