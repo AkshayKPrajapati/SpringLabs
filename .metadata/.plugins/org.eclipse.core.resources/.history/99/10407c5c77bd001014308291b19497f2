@@ -1,9 +1,6 @@
 package com.orm.core;
 
-import java.util.List;
 import java.util.Scanner;
-
-import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.orm.dao.BookDao;
@@ -17,11 +14,11 @@ public class AppExample {
         BookDao bookDao = (BookDao) context.getBean("bookDao");
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter Book ID: ");
+        /*System.out.print("Enter Book ID: ");
         int bookId = scanner.nextInt();
         scanner.nextLine(); 
 
-       /* System.out.print("Enter Book Name: ");
+        System.out.print("Enter Book Name: ");
         String bookName = scanner.nextLine();
 
         System.out.print("Enter Author Name: ");
@@ -40,30 +37,7 @@ public class AppExample {
         }*/
         
         
-        //bookDao.getBook();
-        
         //get data via id
-//        Book book = bookDao.getBookDetailsById(bookId);
-//        System.out.println(book);
-//        
-        
-        //Fetch All Book
-        //bookDao.getAllBook();
-        
-        //Fetch All Books 
-//        List<Book> listOfBooks = bookDao.getAllBooks();
-//        for( Book books: listOfBooks){
-//        	System.out.println(books);
-//        }
-        
-        //get The Object
-//       Book book = bookDao.getBookDetailsById(101);
-//       book.setBookName("Agnipankha");
-//       bookDao.updateBook(book);
-        
-        Book book = bookDao.getBookDetailsById(101);
-        bookDao.deleteBook(book);
-        
-        
+        bookDao.getBookDetails(101);
     }
 }

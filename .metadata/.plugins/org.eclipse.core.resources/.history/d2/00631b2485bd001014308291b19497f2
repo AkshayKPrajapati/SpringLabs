@@ -57,14 +57,5 @@ public class BookDao {
 		this.hibernateTemplate.update(book);
 		System.out.println("Book Details update succesfully ..........");
 	}
-	
-	//---------------------------------------------------------------//
-	// Delete
-	@Transactional
-	public void deleteBook(Book book){
-		this.hibernateTemplate.delete(book);
-		System.out.println("Data Deleted "+book);
-	}
-	
 
 }

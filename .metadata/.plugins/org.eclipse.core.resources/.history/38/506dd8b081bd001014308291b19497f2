@@ -1,7 +1,5 @@
 package com.orm.dao;
 
-import java.util.List;
-
 import javax.transaction.Transactional;
 
 import org.hibernate.Hibernate;
@@ -30,41 +28,15 @@ public class BookDao {
 	}
 	
 	//--------------------------------------------------------------------------//
-	public Book getBookDetailsById(int id ){
+	public Book getBookDetails(int id ){
 		Book book = this.hibernateTemplate.get(Book.class, id);
 		System.out.println("Data Fetch successfully ... !!");
 		return book;
 	}
 	//------------------------------------------------------------------//
-	public void getBook(){
-		Book x = this.hibernateTemplate.get(Book.class, 101);
+	public void getBook(int id ){
+		Book x = this.hibernateTemplate.get(Book.class, id);
 		System.out.println(x.getBookName()+ " "+ x.getAuthorName());
 	}
-	//------------------------------------------------------------//
-	public void getAllBook(){
-		List<Book> listOfBook = this.hibernateTemplate.loadAll(Book.class);
-		System.out.println(listOfBook);
-	}
-	//----------------------------------------------------------//
-	
-	public List<Book>  getAllBooks(){
-		List<Book> listOfBook = this.hibernateTemplate.loadAll(Book.class);
-		return listOfBook;
-	} 
-	//----------------------------------------------------------//
-	@Transactional
-	public void updateBook(Book book){
-		this.hibernateTemplate.update(book);
-		System.out.println("Book Details update succesfully ..........");
-	}
-	
-	//---------------------------------------------------------------//
-	// Delete
-	@Transactional
-	public void deleteBook(Book book){
-		this.hibernateTemplate.delete(book);
-		System.out.println("Data Deleted "+book);
-	}
-	
 
 }

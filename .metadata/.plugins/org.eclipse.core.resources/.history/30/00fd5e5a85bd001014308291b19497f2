@@ -48,7 +48,7 @@ public class AppExample {
 //        
         
         //Fetch All Book
-        //bookDao.getAllBook();
+        bookDao.getAllBook();
         
         //Fetch All Books 
 //        List<Book> listOfBooks = bookDao.getAllBooks();
@@ -60,10 +60,6 @@ public class AppExample {
 //       Book book = bookDao.getBookDetailsById(101);
 //       book.setBookName("Agnipankha");
 //       bookDao.updateBook(book);
-        
-        Book book = bookDao.getBookDetailsById(101);
-        bookDao.deleteBook(book);
-        
         
     }
 }

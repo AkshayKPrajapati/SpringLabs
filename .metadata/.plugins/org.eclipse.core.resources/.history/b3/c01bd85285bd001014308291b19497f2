@@ -63,7 +63,6 @@ public class BookDao {
 	@Transactional
 	public void deleteBook(Book book){
 		this.hibernateTemplate.delete(book);
-		System.out.println("Data Deleted "+book);
 	}
 	
 

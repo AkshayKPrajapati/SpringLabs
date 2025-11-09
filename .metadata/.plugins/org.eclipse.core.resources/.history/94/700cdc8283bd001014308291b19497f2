@@ -1,6 +1,5 @@
 package com.orm.core;
 
-import java.util.List;
 import java.util.Scanner;
 
 import org.springframework.beans.factory.xml.XmlBeanFactory;
@@ -43,27 +42,11 @@ public class AppExample {
         //bookDao.getBook();
         
         //get data via id
-//        Book book = bookDao.getBookDetailsById(bookId);
-//        System.out.println(book);
-//        
+        Book book = bookDao.getBookDetailsById(bookId);
+        System.out.println(book);
+        
         
         //Fetch All Book
-        //bookDao.getAllBook();
-        
-        //Fetch All Books 
-//        List<Book> listOfBooks = bookDao.getAllBooks();
-//        for( Book books: listOfBooks){
-//        	System.out.println(books);
-//        }
-        
-        //get The Object
-//       Book book = bookDao.getBookDetailsById(101);
-//       book.setBookName("Agnipankha");
-//       bookDao.updateBook(book);
-        
-        Book book = bookDao.getBookDetailsById(101);
-        bookDao.deleteBook(book);
-        
-        
+        bookDao.getAllBook();
     }
 }

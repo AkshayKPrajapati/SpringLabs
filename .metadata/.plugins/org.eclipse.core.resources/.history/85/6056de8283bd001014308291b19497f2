@@ -42,29 +42,8 @@ public class BookDao {
 	}
 	//------------------------------------------------------------//
 	public void getAllBook(){
-		List<Book> listOfBook = this.hibernateTemplate.loadAll(Book.class);
-		System.out.println(listOfBook);
+	List<Book> x = this.hibernateTemplate.loadAll(Book.class);
+	System.out.println(x);
 	}
-	//----------------------------------------------------------//
-	
-	public List<Book>  getAllBooks(){
-		List<Book> listOfBook = this.hibernateTemplate.loadAll(Book.class);
-		return listOfBook;
-	} 
-	//----------------------------------------------------------//
-	@Transactional
-	public void updateBook(Book book){
-		this.hibernateTemplate.update(book);
-		System.out.println("Book Details update succesfully ..........");
-	}
-	
-	//---------------------------------------------------------------//
-	// Delete
-	@Transactional
-	public void deleteBook(Book book){
-		this.hibernateTemplate.delete(book);
-		System.out.println("Data Deleted "+book);
-	}
-	
 
 }
