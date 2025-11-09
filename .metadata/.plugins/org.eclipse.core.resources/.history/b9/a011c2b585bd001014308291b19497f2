@@ -1,0 +1,69 @@
+package com.orm.core;
+
+import java.util.List;
+import java.util.Scanner;
+
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import com.orm.dao.BookDao;
+import com.orm.entity.Book;
+
+public class AppExample {
+
+    public static void main(String[] args) {
+        String configuration = "config.xml";
+        ApplicationContext context = new ClassPathXmlApplicationContext(configuration);
+        BookDao bookDao = (BookDao) context.getBean("bookDao");
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter Book ID: ");
+        int bookId = scanner.nextInt();
+        scanner.nextLine(); 
+
+       /* System.out.print("Enter Book Name: ");
+        String bookName = scanner.nextLine();
+
+        System.out.print("Enter Author Name: ");
+        String authorName = scanner.nextLine();
+        Book book = new Book(bookId, bookName, authorName);
+        try {
+            bookDao.saveNewBook(book);
+            System.out.println("\n✅ Book saved successfully!");
+            System.out.println("📘 Book Details: " + book);
+        } catch (Exception e) {
+            System.err.println("\n❌ Failed to save the book: " + e.getMessage());
+            e.printStackTrace();
+        } finally {
+            scanner.close();
+            ((ClassPathXmlApplicationContext) context).close();
+        }*/
+        
+        
+        //bookDao.getBook();
+        
+        //get data via id
+//        Book book = bookDao.getBookDetailsById(bookId);
+//        System.out.println(book);
+//        
+        
+        //Fetch All Book
+        //bookDao.getAllBook();
+        
+        //Fetch All Books 
+//        List<Book> listOfBooks = bookDao.getAllBooks();
+//        for( Book books: listOfBooks){
+//        	System.out.println(books);
+//        }
+        
+        //get The Object
+//       Book book = bookDao.getBookDetailsById(101);
+//       book.setBookName("Agnipankha");
+//       bookDao.updateBook(book);
+        
+        Book book = bookDao.getBookDetailsById(101);
+        bookDao.deleteBook(book);
+        
+        
+    }
+}
