@@ -50,6 +50,7 @@ http://www.springframework.org/schema/tx/spring-tx-4.1.xsd">
 	<property name="annotatedClasses">
 	<list>
 		<value>com.orm.entity.Book</value>
+		<value>com.orm.entity.Student</value>
 	</list>
 	</property>
 </bean>
@@ -68,6 +69,10 @@ http://www.springframework.org/schema/tx/spring-tx-4.1.xsd">
 <!-- Dao class-->
 
 <bean class="com.orm.dao.BookDao" name="bookDao">
+	<property name="hibernateTemplate" ref="hibernateTemplate"></property>
+</bean>
+
+<bean class="com.orm.dao.StudentDao" name="studentDao">
 	<property name="hibernateTemplate" ref="hibernateTemplate"></property>
 </bean>
 

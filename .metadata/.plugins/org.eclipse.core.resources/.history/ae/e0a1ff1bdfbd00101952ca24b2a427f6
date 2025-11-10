@@ -1,0 +1,21 @@
+package com.orm.core;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.orm.dao.BookDao;
+import com.orm.dao.StudentDao;
+import com.orm.entity.Student;
+
+public class StudentExample {
+	
+	public static void main(String[] args) {
+		 String configuration = "config.xml";
+	        ApplicationContext context = new ClassPathXmlApplicationContext(configuration);
+	        StudentDao studentDao = (StudentDao) context.getBean("studentDao");
+	       // System.out.print(studentDao);
+	        
+	        Student  student=new Student(3,"Shreya","NGP",89);
+	        studentDao.saveNewStudent(student);
+	}
+}

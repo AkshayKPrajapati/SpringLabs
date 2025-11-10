@@ -1,0 +1,14 @@
+package com.orm.doubt;
+
+public class NewA {
+	String name="riya";
+	public void m1(){
+		NewB b = new NewB();
+		String name1=b.m2(name);
+		System.out.println(name1);
+	}
+	public static void main(String[] args) {
+		NewA a=new NewA();
+		a.m1();
+	}
+}
