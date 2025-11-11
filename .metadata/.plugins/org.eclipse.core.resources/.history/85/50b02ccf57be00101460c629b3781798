@@ -1,0 +1,62 @@
+package com.orm.dao;
+
+import java.io.Serializable;
+import java.util.List;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.orm.hibernate5.HibernateTemplate;
+
+import com.orm.entity.Student;
+
+public class StudentDao {
+	@Autowired
+	HibernateTemplate hibernateTemplate;
+
+	public HibernateTemplate getHibernateTemplate() {
+		return hibernateTemplate;
+	}
+
+	public void setHibernateTemplate(HibernateTemplate hibernateTemplate) {
+		this.hibernateTemplate = hibernateTemplate;
+	}
+
+	/*public StudentDao() {
+		super();
+		System.out.println("hibernate Template loaded successfully ...");
+	}*/
+	
+	//---------------------------------------------------------------------//
+	@Transactional
+	public void saveNewStudent(Student student){
+		this.hibernateTemplate.save(student);
+		System.out.println("Student data inserted successfully ..." + student);
+	}
+	//---------------------------------------------------------------------//
+	public Student getStudentById(int id){
+		Student student = this.hibernateTemplate.get(Student.class, id);
+		System.out.println("Student data Fetch successfully ...");
+		return student;
+		
+	}
+	//-------------------------------------------------------------------//
+	public List<Student> getStudentAllData(){
+		List<Student> student = this.hibernateTemplate.loadAll(Student.class);
+		return student;
+	}
+	//---------------------------------------------------------------------//
+	@Transactional
+	public void updateStudentData(Student student) {
+	    this.hibernateTemplate.update(student);
+	    System.out.println("Student Data Updated Successfully ... " + student);
+	}
+	//----------------------------------------------------------------------//
+	@Transactional
+	public void deleteStudentData(Student student){
+		this.hibernateTemplate.delete(student);
+		System.out.println("Student Data Deleted Successfully ..."+student);
+		
+	}
+	//-----------------------------------------------------------------------//
+}

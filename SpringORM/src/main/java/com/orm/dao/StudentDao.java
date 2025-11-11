@@ -31,7 +31,7 @@ public class StudentDao {
 	@Transactional
 	public void saveNewStudent(Student student){
 		this.hibernateTemplate.save(student);
-		System.out.println("Student data inserted successfully ..." + student);
+		System.out.println("Student data inserted successfully ..." + student );
 	}
 	//---------------------------------------------------------------------//
 	public Student getStudentById(int id){

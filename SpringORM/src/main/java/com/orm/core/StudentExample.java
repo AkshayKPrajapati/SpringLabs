@@ -40,15 +40,10 @@ public class StudentExample {
 //	        studentUpdate.setMark(100);
 //	        studentDao.updateStudentData(studentUpdate);
 	        
-	        
-	        
+	          
 	        //delete student data
 //	        Student student = studentDao.getStudentById(2);
 //	        studentDao.deleteStudentData(student);
-	        
-	        
-	        
-	        
-	        
+	               
 	}
 }
