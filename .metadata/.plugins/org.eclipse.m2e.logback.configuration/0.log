@@ -961,3 +961,12 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find
 2025-11-11 14:00:55,825 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2025-11-11 14:00:55,825 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2025-11-11 14:00:55,825 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Code\SpringLabs\MVCProject\src\test\resources
+2025-11-11 19:26:29,463 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: MVCProject:MVCProject:0.0.1-SNAPSHOT @ D:\Code\SpringLabs\MVCProject\pom.xml.
+2025-11-11 19:26:30,926 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-11-11 19:26:30,971 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2025-11-11 19:26:30,973 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-11-11 19:26:30,976 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Code\SpringLabs\MVCProject\src\test\resources
+2025-11-11 19:26:32,325 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2025-11-11 19:26:32,325 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Code\SpringLabs\SpringORM\src\main\resources
+2025-11-11 19:26:32,326 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2025-11-11 19:26:32,327 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Code\SpringLabs\SpringORM\src\test\resources
